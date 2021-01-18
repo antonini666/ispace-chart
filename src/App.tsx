@@ -269,11 +269,11 @@ const defaultState = {
         [1360105200000, 38.4],
         [1360191600000, 38.07],
         [1360278000000, 39.12],
-        [1360537200000, 38.64],
-        [1360623600000, 38.89],
-        [1360710000000, 38.81],
-        [1360796400000, 38.61],
-        [1360882800000, 38.63],
+        [1360537200000, 38.642],
+        [1360623600000, 38.893],
+        [1360710000000, 38.813],
+        [1360796400000, 38.615],
+        [1360882800000, 38.636],
         [1361228400000, 38.99],
         [1361314800000, 38.77],
         [1361401200000, 38.34],
@@ -359,6 +359,18 @@ const defaultState = {
           month: "MMM",
           day: "dd MMM",
           hour: "HH:mm"
+        },
+        style: {
+          fontSize: "12px",
+          fontWeight: 300
+        }
+      }
+    },
+    yaxis: {
+      labels: {
+        style: {
+          fontSize: "10px",
+          fontWeight: 300
         }
       }
     },
@@ -374,14 +386,15 @@ const defaultState = {
       dashArray: 0
     }
   }
-  // selection: "six_months"
 };
 
 export default function App() {
   const [data, setData] = React.useState(defaultState);
 
   React.useEffect(() => {
-    const date = new Date(1361833200000);
+    const date = new Date(
+      data.series[0].data[data.series[0].data.length - 1][0]
+    );
     date.setMonth(date.getMonth() - 6);
 
     setData({
