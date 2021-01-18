@@ -424,8 +424,8 @@ export default function App() {
   return (
     <div className="app">
       <h1>iSpace</h1>
-      <div className="chart-list">
-        <div className="chart-item">
+      <ul className="chart-list">
+        <li className="chart-item">
           <div className="chart-item-stats">
             <div className="left-stats">
               <div className="title">Sp500_fut</div>
@@ -448,8 +448,8 @@ export default function App() {
             height="150"
             width="100%"
           />
-        </div>
-        <div className="chart-item">
+        </li>
+        <li className="chart-item">
           <div className="chart-item-stats">
             <div className="left-stats">
               <div className="title">Sp500_fut</div>
@@ -472,8 +472,8 @@ export default function App() {
             height="150"
             width="100%"
           />
-        </div>
-        <div className="chart-item">
+        </li>
+        <li className="chart-item">
           <div className="chart-item-stats">
             <div className="left-stats">
               <div className="title">Sp500_fut</div>
@@ -496,8 +496,8 @@ export default function App() {
             height="150"
             width="100%"
           />
-        </div>
-        <div className="chart-item">
+        </li>
+        <li className="chart-item">
           <div className="chart-item-stats">
             <div className="left-stats">
               <div className="title">Sp500_fut</div>
@@ -520,8 +520,8 @@ export default function App() {
             height="150"
             width="100%"
           />
-        </div>
-        <div className="chart-item">
+        </li>
+        <li className="chart-item">
           <div className="chart-item-stats">
             <div className="left-stats">
               <div className="title">Sp500_fut</div>
@@ -544,8 +544,8 @@ export default function App() {
             height="150"
             width="100%"
           />
-        </div>
-      </div>
+        </li>
+      </ul>
     </div>
   );
 }

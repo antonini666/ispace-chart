@@ -21,6 +21,7 @@ h1 {
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, 230px);
   width: 100%;
+  list-style: none;
 
   @media screen and (max-width: 1024px) {
     grid-template-columns: repeat(2, 50%);
@@ -34,7 +35,6 @@ h1 {
 
   .chart-item {
       padding: 20px 10px;
-      // margin: 20px 0;
       border: 1px solid #E7E8ED;
 
       &:nth-child(1) {
