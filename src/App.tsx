@@ -322,7 +322,7 @@ const defaultState = {
         }
       ],
       id: "bitcoin",
-      type: "area",
+      type: "line",
       height: 350,
       zoom: {
         enabled: false
@@ -331,6 +331,21 @@ const defaultState = {
         show: false
       }
     },
+    // annotations: {
+    //   points: [
+    //     {
+    //       // x: 3,
+    //       x: 1358118000000,
+    //       y: 38.16,
+    //       marker: {
+    //         size: 5,
+    //         fillColor: "#FF823B",
+    //         strokeColor: "transparent",
+    //         cssClass: "chart-point"
+    //       }
+    //     }
+    //   ]
+    // },
     grid: {
       xaxis: {
         lines: {
