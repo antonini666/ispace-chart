@@ -1,0 +1,124 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  font-family: sans-serif;
+  color: #323232;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.chart-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 230px);
+  width: 100%;
+  .chart-item {
+      padding: 20px 10px;
+      // margin: 20px 0;
+      border: 1px solid #E7E8ED;
+
+      &:nth-child(1) {
+        grid-column: 1/4
+      }
+      &:nth-child(2) {
+        grid-column: 4/7
+      }
+      &:nth-child(3) {
+        grid-column: 1/3
+      }
+      &:nth-child(4) {
+        grid-column: 3/5
+      }
+      &:nth-child(5) {
+        grid-column: 5/7
+      }
+  }
+
+  .chart-item-stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+
+    .left-stats {
+
+      .title {
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+      }
+
+      .title-value {
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 31px;
+      }
+    }
+
+    .right-stats {
+      
+      .left-stats-top {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 5px;
+
+        .percentage {
+          // display: block;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 19px; 
+          border-radius: 2px; 
+          color: white;
+          padding: 2px 5px;
+          margin-right: 8px;
+
+          &.growing {
+            background: #27AE60;
+          }
+
+          &.falling {
+            background: #EB5757;
+          }
+        }
+
+        .value {
+          font-size: 16px;
+          line-height: 19px;
+
+        }
+      }
+
+      .left-stats-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        .value-1 {
+          margin-right: 8px;
+        }
+
+        .value-2 {
+          border-radius: 2px;
+          padding: 2px 5px;
+
+          &.growing {
+            border: 2px solid #27AE60;
+          }
+
+          &.falling {
+            border: 2px solid #EB5757;
+          }
+        }
+      }
+    }
+  }
+ 
+}
