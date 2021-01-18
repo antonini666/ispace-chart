@@ -356,9 +356,9 @@ const defaultState = {
       labels: {
         datetimeFormatter: {
           year: "MMM",
-          month: "MMM"
-          // day: "dd MMM",
-          // hour: "HH:mm"
+          month: "MMM",
+          day: "dd MMM",
+          hour: "HH:mm"
         }
       }
     },
